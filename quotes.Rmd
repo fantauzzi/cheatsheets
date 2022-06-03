@@ -1,0 +1,29 @@
+---
+title: "great_quotes"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+"A narrative failure in a data analysis is a failure to justify the path chosen in the analysis vis a vis any number of plausible alternative paths that could have been taken. If those alternatives have not been ruled out, then a gap remains and the audience will be confused about why the alternative was not tried. It is the job of the analyst to either execute some of these alternate analyses or present some evidence regarding why they are not preferable. Ruling out these alternative analyses is part of building a successful data analysis narrative." -Roger Peng
+
+<https://simplystatistics.org/posts/2022-01-13-narrative-failure-in-data-analysis/>
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
