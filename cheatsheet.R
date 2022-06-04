@@ -172,3 +172,11 @@ eigen.stuff$vectors
 
 # The eigenvalues, aka the variance explained
 eigen.stuff$values
+
+# Add an interaction term to the linear regression
+fitted = lm(medv ~ lstat*age, data=Boston)
+# The above is a shorthand for 
+fitted = lm(medv ~ lstat + age +lstat:age, data=Boston)
+
+# Add a non-linear transformation to the linear regression
+fitted = lm(medv ~ lstat + I(lstat^2))
